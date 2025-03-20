@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SoT AI Agent Instruction Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .card {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .instruction {
+            display: inline-block;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            background-color: #e3f2fd;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        .analysis {
+            background-color: #f3e5f5;
+        }
+        .response {
+            background-color: #e8f5e9;
+        }
+        .verification {
+            background-color: #fff3e0;
+        }
+        pre {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+        }
+        .success {
+            color: #388e3c;
+            font-weight: bold;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ddd;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sketch-of-Thought AI Agent Instruction Following Test</h1>
+    <p>This page displays the results from the instruction following test.</p>
+    
+    <div class="card">
+        <div class="instruction">Instruction Following</div>
+        <h2>Alternative Energy Sources Instruction</h2>
+        <p>"Create a list of 5 alternative energy sources and their main advantages"</p>
+        
+        <div class="section analysis">
+            <h3>1. Instruction Analysis</h3>
+            <pre>{
+  "primary_objectives": [
+    "Generate a list of 5 alternative energy sources"
+  ],
+  "constraints": [
+    "Must include advantages for each source"
+  ],
+  "methodologies": [
+    "None specified"
+  ],
+  "output_format": [
+    "List format implied"
+  ]
+}</pre>
+        </div>
+        
+        <div class="section response">
+            <h3>2. Response Execution</h3>
+            <div>
+                <h4>Alternative Energy Sources and Their Advantages</h4>
+                <ol>
+                    <li>
+                        <strong>Solar Energy</strong>
+                        <ul>
+                            <li>Renewable and inexhaustible</li>
+                            <li>No greenhouse gas emissions during operation</li>
+                            <li>Low maintenance costs after initial installation</li>
+                            <li>Can be deployed at various scales (residential to utility)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Wind Energy</strong>
+                        <ul>
+                            <li>Renewable resource with no fuel costs</li>
+                            <li>One of the lowest-priced renewable energy technologies</li>
+                            <li>Creates jobs in manufacturing, installation, and maintenance</li>
+                            <li>Can be built on existing farms or ranches</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Geothermal Energy</strong>
+                        <ul>
+                            <li>Constant output regardless of weather conditions</li>
+                            <li>Very small land footprint per unit of energy</li>
+                            <li>Lower emissions compared to fossil fuels</li>
+                            <li>Provides reliable baseload power</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Hydroelectric Power</strong>
+                        <ul>
+                            <li>High efficiency (>90% in converting energy to electricity)</li>
+                            <li>Long lifespan of facilities (50-100 years)</li>
+                            <li>Reservoirs can provide flood control and water supply</li>
+                            <li>Quick response to electricity demand peaks</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Hydrogen Fuel Cells</strong>
+                        <ul>
+                            <li>Zero emissions (water is the only byproduct)</li>
+                            <li>High energy efficiency</li>
+                            <li>Quiet operation</li>
+                            <li>Potential for energy storage to balance intermittent renewables</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        
+        <div class="section verification">
+            <h3>3. Execution Verification</h3>
+            <pre>{
+  "result": true,
+  "explanation": "The response fulfills all requirements: it provides exactly 5 alternative energy sources with clear advantages listed for each. The format is a well-structured list as implied by the instruction."
+}</pre>
+            <p class="success">✓ Instruction completed successfully</p>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <div class="card">
+        <h2>Instruction Following Process</h2>
+        <p>The SoT AI Agent uses a three-step process for following instructions:</p>
+        <ol>
+            <li><strong>Analysis</strong>: Break down the instruction into objectives, constraints, methodologies, and expected output format</li>
+            <li><strong>Execution</strong>: Execute the instruction based on the analysis, ensuring all requirements are met</li>
+            <li><strong>Verification</strong>: Verify that the execution correctly implements all aspects of the instruction</li>
+        </ol>
+        <p>This process ensures reliable and accurate instruction following with built-in quality control.</p>
+    </div>
+    
+    <div class="card">
+        <h2>Integration with Sketch-of-Thought Reasoning</h2>
+        <p>The instruction following capability integrates with the SoT reasoning paradigms:</p>
+        <ul>
+            <li>Complex instructions can be broken down using <strong>Chunked Symbolism</strong></li>
+            <li>Step-by-step execution follows <strong>Conceptual Chaining</strong> principles</li>
+            <li>Domain-specific instructions utilize <strong>Expert Lexicon</strong> knowledge</li>
+        </ul>
+        <p>This integration allows the agent to efficiently process and execute instructions while leveraging the cognitive advantages of Sketch-of-Thought reasoning.</p>
+    </div>
+</body>
+</html>

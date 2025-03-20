@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SoT AI Agent Test Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .card {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .paradigm {
+            display: inline-block;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            background-color: #e0f7fa;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .query {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .answer {
+            background-color: #f1f8e9;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        .sketch {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 4px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            margin-bottom: 15px;
+        }
+        .viz-container {
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ddd;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sketch-of-Thought AI Agent Test Results</h1>
+    <p>This page displays the test results from the mock reasoning test.</p>
+    
+    <!-- Query 1 -->
+    <div class="card">
+        <div class="paradigm">Conceptual Chaining</div>
+        <h2>Ocean Acidification Query</h2>
+        <div class="query">
+            <p>"How does increased CO2 in the atmosphere relate to ocean acidification?"</p>
+        </div>
+        
+        <h3>Agent Response:</h3>
+        <div class="answer">
+            <p>Increased CO2 in the atmosphere leads to ocean acidification through a chain of processes. When CO2 is absorbed by the ocean, it forms carbonic acid, which releases hydrogen ions, decreasing the ocean's pH. This acidification reduces carbonate availability, making it difficult for marine organisms to form shells and skeletons, disrupting marine ecosystems.</p>
+        </div>
+        
+        <h3>Reasoning Sketch:</h3>
+        <div class="sketch">
+Conceptual Chain Reasoning:
+
+CO2 Emissions -> Atmospheric CO2 Increase -> Greenhouse Effect Enhancement
+Greenhouse Effect Enhancement -> Global Temperature Rise -> Ocean Temperature Increase
+Ocean Temperature Increase -> Decreased CO2 Solubility -> Reduced Ocean CO2 Absorption
+Atmospheric CO2 Increase -> Ocean CO2 Absorption -> Carbonic Acid Formation
+Carbonic Acid Formation -> Hydrogen Ion Release -> Decreased Ocean pH
+Decreased Ocean pH -> Reduced Carbonate Availability -> Impaired Shell Formation</div>
+        
+        <div class="viz-container">
+            <h3>Visualization:</h3>
+            <img src="output/conceptual_chain.png" alt="Conceptual Chain Visualization">
+        </div>
+    </div>
+    
+    <hr>
+    
+    <!-- Query 2 -->
+    <div class="card">
+        <div class="paradigm">Chunked Symbolism</div>
+        <h2>Distance Calculation Query</h2>
+        <div class="query">
+            <p>"If a car travels at 60 km/h for 2.5 hours, how far will it go?"</p>
+        </div>
+        
+        <h3>Agent Response:</h3>
+        <div class="answer">
+            <p>If a car travels at 60 km/h for 2.5 hours, it will cover a distance of 150 km (calculated as speed × time = 60 km/h × 2.5 h = 150 km). Converting to miles, this is approximately 93.21 miles.</p>
+        </div>
+        
+        <h3>Reasoning Sketch:</h3>
+        <div class="sketch">
+Chunked Symbolism Reasoning:
+
+# Define variables
+speed = 60 km/h
+time = 2.5 h
+
+# Calculate distance
+distance = speed * time
+distance = 60 km/h * 2.5 h
+distance = 150 km
+
+# Convert to miles
+conversion_factor = 0.621371 miles/km
+distance_miles = distance * conversion_factor
+distance_miles = 150 km * 0.621371 miles/km
+distance_miles = 93.21 miles</div>
+        
+        <div class="viz-container">
+            <h3>Visualization:</h3>
+            <img src="output/equations.png" alt="Equation Visualization">
+        </div>
+    </div>
+    
+    <hr>
+    
+    <!-- Query 3 -->
+    <div class="card">
+        <div class="paradigm">Expert Lexicon</div>
+        <h2>Medical Treatment Protocol Query</h2>
+        <div class="query">
+            <p>"What's the typical treatment protocol for a patient presenting with acute myocardial infarction?"</p>
+        </div>
+        
+        <h3>Agent Response:</h3>
+        <div class="answer">
+            <p>The typical treatment protocol for acute myocardial infarction includes: immediate assessment with ECG and cardiac biomarkers; administration of aspirin and oxygen; timely reperfusion via PCI or fibrinolysis; anticoagulation; and secondary prevention with medications like statins and beta-blockers. This protocol aims to restore blood flow, limit infarct size, and prevent complications.</p>
+        </div>
+        
+        <h3>Reasoning Sketch:</h3>
+        <div class="sketch">
+Expert Lexicon Reasoning:
+
+Acute Myocardial Infarction (AMI) Treatment Protocol:
+1. Initial assessment - ECG within 10 minutes, cardiac biomarkers (troponin, CK-MB)
+2. Immediate interventions - Aspirin (162-325mg), Oxygen if saturation < 90%, Nitroglycerin for pain
+3. Reperfusion strategy - Primary PCI if available within 90 minutes, otherwise fibrinolysis
+4. Anticoagulation - Heparin or low molecular weight heparin
+5. Secondary prevention - Statins, Beta-blockers, ACE inhibitors/ARBs</div>
+    </div>
+</body>
+</html>
