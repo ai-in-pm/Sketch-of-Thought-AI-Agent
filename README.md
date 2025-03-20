@@ -145,6 +145,11 @@ The project includes several tools for testing and demonstration:
 - **HTML Viewers**: Interactive web interfaces to view visualization outputs
 - **Python API Examples**: Code snippets showing API usage patterns
 
+![image](https://github.com/user-attachments/assets/bcf2ff23-5572-4110-8fc1-9080c220e716)
+![image](https://github.com/user-attachments/assets/ee11fb88-930a-4b6f-ad52-ca9d33c723f1)
+
+
+
 ## Environment Variables
 
 Configure these in your `.env` file:
