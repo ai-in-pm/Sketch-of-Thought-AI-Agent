@@ -146,7 +146,8 @@ The project includes several tools for testing and demonstration:
 - **Python API Examples**: Code snippets showing API usage patterns
 
 ![image](https://github.com/user-attachments/assets/bcf2ff23-5572-4110-8fc1-9080c220e716)
-![image](https://github.com/user-attachments/assets/ee11fb88-930a-4b6f-ad52-ca9d33c723f1)
+![image](https://github.com/user-attachments/assets/ff77a955-856e-475f-94b3-6b0cb59c3fbc)
+
 
 
 
